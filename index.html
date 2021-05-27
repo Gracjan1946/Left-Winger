@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Winger</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <img src="img/name.png" alt="Left Winger">
+    </nav> 
+    <header>       
+        <video autoplay muted loop>
+            <source src="img/LACOSTE.mp4" type="video/mp4">
+            Your browser does not support the video tag
+        </video>
+        <section class="background"></section>
+    </header>
+    <main class="container">
+        <img src="img/cover.jpg" alt="CD" class="cover">
+        <button name="buy">Kup teraz</button>
+    </main>
+        <!-- Checkout -->
+        <main class="form">
+            <img src="img/title.png" alt="Left Winger" class="logo">
+                <section class="cart">
+                    <input type="number" min="1" max="10" value="1">
+                    <p>29.99zł</p>
+                    <p>Fekir - Left Winger</p>
+                    <img src="img/cover.jpg" alt="CD">
+                </section>
+                <section class="checkout">
+                    <section class="payment">
+                        <h3>Dane do wysyłki:</h3>
+                        <form method="POST" action="https://platnosc.hotpay.pl/">
+                        <input type="hidden" name="SEKRET" value="" required>
+                        <input type="hidden" name="ID_ZAMOWIENIA" value="" required>
+                        <input type="hidden" name="KWOTA" value="" required>
+                        <input type="hidden" name="NAZWA_USLUGI" value="" required>
+                        <input type="hidden" name="ADRES_WWW" value="transakcja.html" required>
+                        <input type="text" name="data" placeholder="Imie i Nazwisko" value='' required>
+                        <input type="text" name="data" placeholder="Ulica" required>
+                        <input type="text" name="data" placeholder="Kod pocztowy" required>
+                        <input type="text" name="data" placeholder="Miasto" required>
+                        <input type="text" name="data" placeholder="Telefon" required>
+                        <input type="text" name="EMAIL" placeholder="E-mail" required>
+                        <input type="hidden" name="DANE_OSOBOWE" value="">
+                    </section>
+                    <section class="cost">
+                       <p>Wartość produktów: <span class="price"></span></p>
+                       <p>Koszt transportu:</p>
+                       <span class="ship">8.50zł</span>
+                       <p>Razem do zapłaty:</p>
+                       <span class="amount"></span>
+                       <input type="checkbox" required class="regulamin">
+                       <sub>Przeczytałem/am i akceptuję <a href="regulamin.html">Regulamin</a></sub>
+                       
+
+                    </section>  
+                </section>
+                <input type="submit" value="Zapłać" class="button">
+            </form>
+        </main>
+    <script src="src/main.js"></script>
+</body>
+</html>
