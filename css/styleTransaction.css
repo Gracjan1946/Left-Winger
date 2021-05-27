@@ -1,0 +1,109 @@
+main.transakcja{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: max-content;
+        /* background-color: rgba(0,0,0,.6); */
+        padding: 25px;
+        border-radius: 15px;
+        z-index: 1;
+        color: white;
+}
+.transakcja img{
+    
+    height: 350px;
+    transform:translateX(20%) rotate(-10deg);
+    margin: 15px 0;
+}
+.transakcja img:nth-child(2){
+    
+    transform:translateX(-20%) rotate(10deg);
+}
+.transakcja h1{
+    text-align: center;
+}
+@media(max-width:414px){
+    main.transakcja{
+        width: 100%;
+    }
+    .transakcja img{
+        height: 170px;
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-75%,-50%) rotate(-10deg);
+    }
+    .transakcja img:nth-child(2){
+    
+        transform:translate(-25%,-50%) rotate(10deg);
+    }
+    .transakcja h1{
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 22px;
+    }
+}
+
+@media(max-width:375px){
+    
+    .transakcja img{
+        height: 150px; 
+    }
+    .transakcja h1{
+        font-size: 20px;
+    }
+}
+@media(max-width:320px){
+    .transakcja img{
+        height: 130px;
+        top: -65%;
+    }
+    .transakcja h1{
+        font-size: 18px;
+    }
+}
+@media(max-width:823px) and (orientation:landscape){
+    main.transakcja{
+        width: 100%;
+    }
+    .transakcja img{
+        height: 200px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-75%,-50%) rotate(-10deg);
+    }
+    .transakcja img:nth-child(2){
+    
+        transform:translate(-25%,-50%) rotate(10deg);
+    }
+    .transakcja h1{
+        position: absolute;
+        top: 320%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 24px;
+    }
+}
+@media(max-width:812px) and (orientation:landscape){
+    .transakcja img{
+        height: 180px;
+        top: 40%;
+    }
+    .transakcja h1{
+        font-size: 22px;
+        top: 310%;
+    }
+}
+@media(max-width:568px) and (orientation:landscape){
+    .transakcja img{
+        height: 150px;
+    }
+    .transakcja h1{
+        top: 270%;
+        font-size: 20px;
+    }
+}

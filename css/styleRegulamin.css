@@ -1,0 +1,86 @@
+nav{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 2;
+}
+
+nav img{
+    cursor: pointer;
+}
+main.regulamin{
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 55%;
+    padding: 25px;
+    background-color:rgba(0,0,0,.6);
+    border: 1px white solid;
+    border-radius: 15px;
+    color: white;
+}
+
+main.regulamin h1{
+text-align: center;
+padding: 10px;
+}
+
+main.regulamin h2{
+    margin: 15px 0 10px 0;
+}
+main.regulamin p{
+    padding: 0 0 5px 10px;
+}
+main.regulamin p.sub{
+    padding-left: 25px;
+}
+
+@media (max-width:1024px) and (orientation:portrait){
+    main.regulamin{
+        width: 75%;
+    }
+}
+@media (max-width:414px) and (orientation:portrait){
+    main.regulamin h1{
+        font-size: 21px;
+    }
+    main.regulamin h2{
+        font-size: 13px;
+    }
+    main.regulamin p{
+        font-size: 11px;
+    }
+}
+@media (max-width:360px){
+    main.regulamin h1{
+        font-size: 14px;
+    }
+    main.regulamin h2{
+        font-size: 12px;
+    }
+    main.regulamin p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:812px) and (orientation:landscape)
+{
+    nav{
+        height: 15vh;
+    }
+    main.regulamin{
+        top: 20vh;
+        width: 80%;
+    }
+    main.regulamin h1{
+        font-size: 26px;
+    }
+    main.regulamin h2{
+        font-size: 18px;
+    }
+    main.regulamin p{
+        font-size: 12px;
+    }
+}
